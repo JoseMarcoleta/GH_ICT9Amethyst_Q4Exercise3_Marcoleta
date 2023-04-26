@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 3</title>
+</head>
+<body>
+	<input type="text" id="id1" placeholder="Input the length in Cm"><br>
+	<input type="submit" value="Compute" onclick="myFunction()"><br>
+	<p id="answer"></p>
+	<script>
+		function myFunction() {
+			var num1 = document.getElementById('id1').value;
+			var num2 = 30.48;
+			var answer = num1 / num2;
+			document.getElementById('answer').innerHTML = answer + "ft";
+		}
+	</script>
+</body>
+</html>
